@@ -1,0 +1,155 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+#container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#profile-picture {
+  width: 100%;
+}
+
+#left {
+  padding: 2%;
+  width: 25%;
+  background-color: rgba(220, 220, 220, 0.836);
+}
+
+.personal-info {
+  display: flex;
+}
+
+.personal-info i,
+#left p {
+  padding: 4px;
+}
+
+.personal-info a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.personal-info a .fa-brands {
+  font-size: 2em;
+  margin: 0 1em;
+}
+
+#right {
+  width: 60%;
+}
+
+#right :last-child {
+  margin-bottom: 0;
+}
+
+.section {
+  padding: 2%;
+  margin-bottom: 2%;
+  background-color: rgba(220, 220, 220, 0.836);
+}
+
+.education {
+  display: grid;
+  grid-template-columns: 40% auto 20%;
+  grid-template-rows: auto auto;
+  padding: 2% 0;
+}
+
+.education h3,
+p {
+  margin: 0;
+}
+
+.education .title {
+  grid-column-start: 1;
+}
+
+.education .school {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.education .period {
+  grid-column-start: 3;
+}
+
+.unchecked {
+  color: rgba(102, 96, 96, 0.548);
+}
+
+.checked {
+  color: black;
+}
+
+.language h3,
+p {
+  margin: 0;
+}
+
+.language {
+  display: grid;
+  grid-template-columns: 40% auto 20%;
+  grid-template-rows: auto auto;
+  padding: 2% 0;
+}
+
+.language .language-title {
+  grid-column-start: 1;
+}
+
+.language .stars {
+  grid-column-start: 3;
+  display: flex;
+  justify-content: right;
+}
+
+.language .description {
+  grid-column: 1 / span 3;
+  grid-row-start: 2;
+  padding: 4px 0;
+}
+
+@media screen and (max-width: 1200px) {
+  #left {
+    width: 30%;
+  }
+
+  #right {
+    width: 63%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #left {
+    width: 80%;
+  }
+
+  #right {
+    margin-top: 2%;
+    width: 84%;
+  }
+
+  .language {
+    grid-template-columns: 40% auto 30%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #left {
+    width: 95%;
+  }
+
+  #right {
+    width: 99%;
+  }
+
+  .language {
+    grid-template-columns: 40% auto 40%;
+  }
+}
